@@ -171,3 +171,19 @@ template { display: none; }
 .container-fluid { width: 100%; margin: 0 auto; }
 
 .row { display: flex; flex-wrap: wrap; }
+
+.home { background-size: cover; background-position: center; height: 850px; }
+
+.home .header { display: flex; flex-direction: row; justify-content: space-between; }
+
+.home .header .logo { margin: 16px; }
+
+.home .header ul { display: flex; flex-direction: row; list-style-type: none; }
+
+.home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; }
+
+.home .hero-text { height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; font-family: 'Montserrat', sans-serif; }
+
+.home .hero-text h1, .home .hero-text button { text-transform: uppercase; }
+
+.home .hero-text button { background-color: #fed136; color: white; width: 240px; height: 65px; font-weight: 700; border: none; border-radius: 3px; }

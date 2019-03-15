@@ -3,3 +3,52 @@
 @import "normalize";
 @import "layout";
 
+.home {
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo {
+            margin: 16px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+        li {
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+    .hero-text {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        h1,
+        button{
+            text-transform: uppercase;
+        }
+        button {
+            background-color: $golden;
+            color: white;
+            width: 240px;
+            height: 65px;
+            font-weight: 700;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+
+}
+
