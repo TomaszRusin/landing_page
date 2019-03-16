@@ -172,6 +172,8 @@ template { display: none; }
 
 .row { display: flex; flex-wrap: wrap; }
 
+body { font-family: 'Montserrat', sans-serif; }
+
 .home { background-size: cover; background-position: center; height: 850px; }
 
 .home .header { display: flex; flex-direction: row; justify-content: space-between; }
@@ -182,8 +184,16 @@ template { display: none; }
 
 .home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; }
 
-.home .hero-text { height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; font-family: 'Montserrat', sans-serif; }
+.home .hero-text { height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; }
 
 .home .hero-text h1, .home .hero-text button { text-transform: uppercase; }
 
 .home .hero-text button { background-color: #fed136; color: white; width: 240px; height: 65px; font-weight: 700; border: none; border-radius: 3px; }
+
+.services { display: flex; justify-content: center; text-align: center; }
+
+.services h1 { text-transform: uppercase; }
+
+.services .circle { margin: auto; border: 3px solid #fed136; border-radius: 50px; width: 80px; height: 80px; }
+
+.services .circle img { padding: 18px 15px; }
