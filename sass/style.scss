@@ -7,14 +7,28 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.header-follow {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+}
+
+.text-block {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+
 .home {
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
-    height: 850px;
+    height: 700px;
     .header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-top: 25px;
         .logo {
             margin: 16px;
         }
@@ -29,6 +43,7 @@ body {
             font-weight: 500;
             text-transform: uppercase;
             color: white;
+            margin: 0 20px;
         }
     }
     .hero-text {
@@ -38,7 +53,17 @@ body {
         justify-content: center;
         align-items: center;
         color: white;
-        
+        h2 {
+            font-size: 40px;
+            font-weight: 300;
+            font-family: 'PT Serif', serif;
+            font-style: italic;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 75px;
+            margin-top: 0;
+        }
         h1,
         button{
             text-transform: uppercase;
@@ -55,12 +80,25 @@ body {
     }
 }
 
-.services {
+.services,
+.portfolio {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 120px 0;
     h1 {
         text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    p {
+        color: $faded;
+    }
+}
+
+.services {
+    .encapsuled-services {
+        padding: 80px 0;
     }
     .circle {
         margin: auto;
@@ -72,6 +110,13 @@ body {
             padding: 18px 15px;
         }
     }
-
 }
 
+.portfolio {
+    .brick {
+        margin: 50px 55px;
+        p {
+            padding-bottom: 27px;
+        }
+    }
+}

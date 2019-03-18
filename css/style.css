@@ -168,32 +168,52 @@ template { display: none; }
 
 .container { width: 100%; max-width: 1200px; margin: 0 auto; }
 
-.container-fluid { width: 100%; margin: 0 auto; }
+.container-fluid { width: 1400px; margin: 0 auto; }
 
 .row { display: flex; flex-wrap: wrap; }
 
+.bg-gray { background-color: #f7f7f7; }
+
+.bg-white { background-color: #fff; }
+
 body { font-family: 'Montserrat', sans-serif; }
 
-.home { background-size: cover; background-position: center; height: 850px; }
+.header-follow { font-family: 'PT Serif', serif; font-style: italic; }
 
-.home .header { display: flex; flex-direction: row; justify-content: space-between; }
+.text-block { font-family: 'Roboto Slab', serif; }
+
+.home { background-color: rgba(0, 0, 0, 0.5); background-size: cover; background-position: center; height: 700px; }
+
+.home .header { display: flex; flex-direction: row; justify-content: space-around; padding-top: 25px; }
 
 .home .header .logo { margin: 16px; }
 
 .home .header ul { display: flex; flex-direction: row; list-style-type: none; }
 
-.home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; }
+.home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; margin: 0 20px; }
 
 .home .hero-text { height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; }
+
+.home .hero-text h2 { font-size: 40px; font-weight: 300; font-family: 'PT Serif', serif; font-style: italic; margin-top: 0; }
+
+.home .hero-text h1 { font-size: 75px; margin-top: 0; }
 
 .home .hero-text h1, .home .hero-text button { text-transform: uppercase; }
 
 .home .hero-text button { background-color: #fed136; color: white; width: 240px; height: 65px; font-weight: 700; border: none; border-radius: 3px; }
 
-.services { display: flex; justify-content: center; text-align: center; }
+.services, .portfolio { display: flex; justify-content: center; text-align: center; padding: 120px 0; }
 
-.services h1 { text-transform: uppercase; }
+.services h1, .portfolio h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
+
+.services p, .portfolio p { color: #777777; }
+
+.services .encapsuled-services { padding: 80px 0; }
 
 .services .circle { margin: auto; border: 3px solid #fed136; border-radius: 50px; width: 80px; height: 80px; }
 
 .services .circle img { padding: 18px 15px; }
+
+.portfolio .brick { margin: 50px 55px; }
+
+.portfolio .brick p { padding-bottom: 27px; }
