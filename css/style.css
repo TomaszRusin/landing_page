@@ -182,6 +182,12 @@ body { font-family: 'Montserrat', sans-serif; }
 
 .text-block { font-family: 'Roboto Slab', serif; }
 
+p { color: #777777; }
+
+.text-right { text-align: right; padding-right: 45px; }
+
+.text-left { text-align: left; padding-left: 35px; }
+
 .home { background-color: rgba(0, 0, 0, 0.5); background-size: cover; background-position: center; height: 700px; }
 
 .home .header { display: flex; flex-direction: row; justify-content: space-around; padding-top: 25px; }
@@ -206,8 +212,6 @@ body { font-family: 'Montserrat', sans-serif; }
 
 .services h1, .portfolio h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
-.services p, .portfolio p { color: #777777; }
-
 .services .encapsuled-services { padding: 80px 0; }
 
 .services .circle { margin: auto; border: 3px solid #fed136; border-radius: 50px; width: 80px; height: 80px; }
@@ -217,3 +221,9 @@ body { font-family: 'Montserrat', sans-serif; }
 .portfolio .brick { margin: 50px 55px; }
 
 .portfolio .brick p { padding-bottom: 27px; }
+
+.about { padding: 120px 0; }
+
+.about .about-header { display: flex; flex-direction: column; align-items: center; padding-bottom: 85px; }
+
+.about .about-header h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }

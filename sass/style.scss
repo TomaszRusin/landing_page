@@ -16,7 +16,19 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+p {
+    color: $faded;
+}
 
+.text-right {
+    text-align: right;
+    padding-right: 45px;
+}
+
+.text-left {
+    text-align: left;
+    padding-left: 35px;
+}
 
 
 .home {
@@ -91,9 +103,6 @@ body {
         font-size: 40px;
         font-weight: 700;
     }
-    p {
-        color: $faded;
-    }
 }
 
 .services {
@@ -117,6 +126,21 @@ body {
         margin: 50px 55px;
         p {
             padding-bottom: 27px;
+        }
+    }
+}
+
+.about {
+    padding: 120px 0;
+    .about-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 85px;
+        h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 700;
         }
     }
 }
