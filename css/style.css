@@ -179,7 +179,7 @@ template { display: none; }
 
 body { font-family: 'Montserrat', sans-serif; }
 
-.header-follow { font-family: 'PT Serif', serif; font-style: italic; }
+.header-follow { font-family: 'PT Serif', serif; font-style: italic; font-size: 20px; }
 
 .text-block { font-family: 'Roboto Slab', serif; }
 
@@ -235,9 +235,13 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .about h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
+.about h4 { margin: 7px; }
+
 .about .about-text-right { width: 80%; float: right; }
 
 .about .about-text-left { width: 80%; float: left; }
+
+.about .portrait { height: 100%; }
 
 .about .future { background-color: #fed136; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; padding: 30px; font-size: 18px; /* Przybliżenie (wynika z podstawienia czcionki) */ font-weight: 700; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
 
@@ -251,10 +255,38 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .team .social { display: flex; justify-content: center; }
 
-.team .social i { margin: 0 10px; font-size: 21px; text-align: center; padding: 7px 0; border: 3px solid black; border-radius: 50%; width: 40px; height: 40px; }
-
 .team .team-end { width: 80%; margin: 50px auto 0; }
 
-.contact { background-size: cover; background-position: center; }
+.contact { background-color: #222222; }
 
-.contact .section-header h1 { color: white; }
+.contact .layer { background-position: 700px -290px; }
+
+.contact .section-header { padding: 100px 0 80px 0; }
+
+.contact .section-header h1 { color: white; margin-bottom: 0; }
+
+.contact form { display: flex; align-items: center; flex-direction: column; }
+
+.contact form .text-fields { display: flex; justify-content: center; height: auto; width: 100%; }
+
+.contact form .text-fields .info { display: flex; flex-direction: column; }
+
+.contact form .text-fields .info input { height: 50px; }
+
+.contact form .text-fields .msg textarea { height: 190px; }
+
+.contact form .text-fields input, .contact form .text-fields textarea { margin: 10px; padding: 15px; width: 500px; border-radius: 4px; }
+
+.contact form .text-fields input::placeholder, .contact form .text-fields textarea::placeholder { color: #bbbbbb; font-weight: 700; }
+
+.contact form .submit { color: white; background-color: #fed136; border: none; border-radius: 5px; width: 240px; height: 60px; margin: 30px auto 110px; text-transform: uppercase; }
+
+.team i, footer i { margin: 0 10px; font-size: 21px; text-align: center; padding: 7px 0; border: 2px solid black; border-radius: 50%; width: 40px; height: 40px; }
+
+footer { height: 80px; }
+
+footer .row { height: 100%; }
+
+footer .center { text-align: center; }
+
+footer p, footer .social { padding: 40px; }

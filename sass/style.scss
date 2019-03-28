@@ -10,6 +10,7 @@ body {
 .header-follow {
     font-family: 'PT Serif', serif;
     font-style: italic;
+    font-size: 20px;
 }
 
 .text-block {
@@ -168,6 +169,9 @@ h1 {
         font-size: 40px;
         font-weight: 700;
     }
+    h4 {
+        margin: 7px;
+    }
 
     .about-text-right {
         width: 80%;
@@ -177,6 +181,9 @@ h1 {
     .about-text-left {
         width: 80%;
         float: left;
+    }
+    .portrait {
+        height: 100%;
     }
     
     .future {
@@ -213,16 +220,6 @@ h1 {
     .social {
         display: flex;
         justify-content: center;
-        i {
-            margin: 0 10px;
-            font-size: 21px;
-            text-align: center;
-            padding: 7px 0;
-            border: 3px solid black;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-        }
     }
     .team-end {
         width: 80%;
@@ -231,11 +228,85 @@ h1 {
 }
 
 .contact {
-    background-size: cover;
-    background-position: center;
+    background-color: #222222;
+    .layer {
+        background-position: 700px -290px;
+    }
     .section-header {
+        padding: 100px 0 80px 0;
         h1 {
             color: white;
+            margin-bottom: 0;
         }
+    }
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .text-fields {
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            .info {
+                display: flex;
+                flex-direction: column;
+                input {
+                    height: 50px;
+                }
+            }
+            .msg {
+                textarea {
+                    height: 190px;
+                }
+            }
+            input,
+            textarea {                
+                margin: 10px;
+                padding: 15px;
+                width: 500px;
+                border-radius: 4px;
+                &::placeholder {
+                    color: #bbbbbb;
+                    font-weight: 700;
+                }
+            }
+        }
+        .submit {
+            color: white;
+            background-color: $golden;
+            border: none;
+            border-radius: 5px;
+            width: 240px;
+            height: 60px;
+            margin: 30px auto 110px;
+            text-transform: uppercase;
+        }
+    }
+}
+.team,
+footer {
+    i {
+        margin: 0 10px;
+        font-size: 21px;
+        text-align: center;
+        padding: 7px 0;
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+}
+footer {
+    height: 80px;
+    .row {
+        height: 100%;
+    }
+    .center {
+        text-align: center;
+    }
+    p,
+    .social {
+        padding: 40px;
     }
 }
