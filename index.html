@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|PT+Serif:300i,400,400i|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="background">
         <div class="home container-fluid" style="background-image:url(./vendor/resource-images/BackgroundImage.png)">
-            <div class="container">
-                <div class="header">
-                    <div class="logo">
-                        <img src="vendor/resource-images/Logo.png" alt="logo-golden">
+            <div class="layer">
+                <div class="container">
+                    <div class="header">
+                        <div class="logo">
+                            <img src="vendor/resource-images/Logo.png" alt="logo-golden">
+                        </div>
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Portfolio</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Portfolio</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="hero-text">
-                    <h2>Welcome To Our Studio!</h2>
-                    <h1>It's nice to meet you</h1>
-                    <button>Tell me more</button>
+                    <div class="hero-text">
+                        <h2>Welcome To Our Studio!</h2>
+                        <h1>It's nice to meet you</h1>
+                        <button>Tell me more</button>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -121,7 +124,7 @@
                 <div class="col-xl-5 text-right">
                     <h4>July 2010</h4>
                     <h4>Our Humble Beginnings</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class="about-text-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Suscipit adipisci dicta iure incidunt laborum animi necessitatibus iusto beatae quas earum,
                         magni nesciunt tempora unde quidem officiis odio iste numquam illum?</p>
                 </div>
@@ -145,7 +148,7 @@
                 <div class="col-xl-5 text-left">
                     <h4>January 2011</h4>
                     <h4>Facing Startup Battles</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class="about-text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Suscipit adipisci dicta iure incidunt laborum animi necessitatibus iusto beatae quas earum,
                         magni nesciunt tempora unde quidem officiis odio iste numquam illum?</p>
                 </div>
@@ -159,7 +162,7 @@
                 <div class="col-xl-5 text-right">
                     <h4>December 2012</h4>
                     <h4>Enter The Dark Days</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class="about-text-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Suscipit adipisci dicta iure incidunt laborum animi necessitatibus iusto beatae quas earum,
                         magni nesciunt tempora unde quidem officiis odio iste numquam illum?</p>
                 </div>
@@ -183,7 +186,7 @@
                 <div class="col-xl-5 text-left">
                     <h4>February 2014</h4>
                     <h4>Our Triumph</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <p class="about-text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                         Suscipit adipisci dicta iure incidunt laborum animi necessitatibus iusto beatae quas earum,
                         magni nesciunt tempora unde quidem officiis odio iste numquam illum?</p>
                 </div>
@@ -214,54 +217,46 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-4">
-                        <div class="portret-border"></div>
+                        <div class="portrait" style="background-image:url(https://images.pexels.com/photos/2033460/pexels-photo-2033460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
                         <h4>Kimberley Thompson</h4>
                         <p>Marketer</p>
                         <div class="social">
-                            <div class="row">
-                                <div class="col-xl-4 twitter"></div>
-                                <div class="col-xl-4 facebook"></div>
-                                <div class="col-xl-4 pinterest"></div>
-                            </div>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-pinterest-p"></i>
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="portret-border"></div>
+                        <div class="portrait" style="background-image:url(https://images.pexels.com/photos/1963481/pexels-photo-1963481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
                         <h4>Rico Massimo</h4>
                         <p>Coder</p>
                         <div class="social">
-                            <div class="row">
-                                <div class="col-xl-4 twitter"></div>
-                                <div class="col-xl-4 facebook"></div>
-                                <div class="col-xl-4 google"></div>
-                            </div>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="portret-border"></div>
+                        <div class="portrait" style="background-image:url(https://images.pexels.com/photos/1804514/pexels-photo-1804514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
                         <h4>Uku Mason</h4>
                         <p>Graphic Designer</p>
                         <div class="social">
-                            <div class="row">
-                                <div class="col-xl-6 facebook"></div>
-                                <div class="col-xl-6 pinterest"></div>
-                            </div>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-pinterest-p"></i>
                         </div>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <p class="team-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Error provident laboriosam esse incidunt cum voluptas quisquam voluptate excepturi aperiam quod?</p>
             </div>
         </div>
-        <div class="logos">
-            <div class="row">
-                <div class="col-xl-3"><img src="./vendor/resource-images/Envato.png" alt="Envato"></div>
-                <div class="col-xl-3"><img src="./vendor/resource-images/WordPress.png" alt="WordPress"></div>
-                <div class="col-xl-3"><img src="./vendor/resource-images/Tuts+.png" alt="Tuts+"></div>
-                <div class="col-xl-3"><img src="./vendor/resource-images/Microlancer copy.png" alt="Microlancer"></div>
-            </div>
+        <div class="logos container">
+            <img src="./vendor/resource-images/Envato.png" alt="Envato">
+            <img src="./vendor/resource-images/WordPress.png" alt="WordPress">
+            <img src="./vendor/resource-images/Tuts+.png" alt="Tuts+">
+            <img src="./vendor/resource-images/Microlancer copy.png" alt="Microlancer">
         </div>
-        <div class="contact" style="background-image: url(./vendor/resource-images/Background-map.png)">
+        <div class="contact container-fluid" style="background-image: url(./vendor/resource-images/Background-map.png)">
             <div class="section-header">
                 <h1>Contact Us</h1>
                 <p class="header-follow">Lorem ipsum dolor sit amet consectetur.</p>
@@ -286,10 +281,10 @@
             <div class="row">
                 <div class="col-xl-4">Copyright 2014 FreebiesXpress.com</div>
                 <div class="col-xl-4">
-                    <div class="col-xl-4 twitter"></div>
-                    <div class="col-xl-4 facebook"></div>
-                    <div class="col-xl-4 pinterest"></div>
-                    <div class="col-xl-4 google"></div>
+                    <div class="col-xl-4"><i class="fab fa-twitter"></i></div>
+                    <div class="col-xl-4"><i class="fab fa-facebook-f"></i></div>
+                    <div class="col-xl-4"><i class="fab fa-pinterest-p"></i></div>
+                    <div class="col-xl-4"><i class="fab fa-google-plus-g"></i></div>
                 </div>
                 <div class="col-xl-4"></div>
             </div>

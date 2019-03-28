@@ -27,7 +27,7 @@ p {
 
 .text-left {
     text-align: left;
-    padding-left: 35px;
+    padding-left: 45px;
 }
 
 .vertical-line {
@@ -52,10 +52,17 @@ h1 {
 }
 
 .home {
-    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
+    position: relative;
     height: 700px;
+    .layer{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+    }
     .header {
         display: flex;
         flex-direction: row;
@@ -113,12 +120,20 @@ h1 {
 }
 
 .services,
-.portfolio {
+.portfolio,
+.team {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 120px 0;
 
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 60px 0;
 }
 
 .services {
@@ -153,6 +168,16 @@ h1 {
         font-size: 40px;
         font-weight: 700;
     }
+
+    .about-text-right {
+        width: 80%;
+        float: right;
+    }
+
+    .about-text-left {
+        width: 80%;
+        float: left;
+    }
     
     .future {
         background-color: $golden;
@@ -177,7 +202,37 @@ h1 {
     padding-bottom: 85px;
 }
 
+.team {
+    .portrait {
+        border: none;
+    }
+    h4,
+    p {
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        i {
+            margin: 0 10px;
+            font-size: 21px;
+            text-align: center;
+            padding: 7px 0;
+            border: 3px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .team-end {
+        width: 80%;
+        margin: 50px auto 0;
+    }
+}
+
 .contact {
+    background-size: cover;
+    background-position: center;
     .section-header {
         h1 {
             color: white;

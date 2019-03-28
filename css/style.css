@@ -187,7 +187,7 @@ p { color: #777777; }
 
 .text-right { text-align: right; padding-right: 45px; }
 
-.text-left { text-align: left; padding-left: 35px; }
+.text-left { text-align: left; padding-left: 45px; }
 
 .vertical-line { border-left: 2px solid #f1f1f1; height: 90px; transform: translateX(50%); }
 
@@ -195,7 +195,9 @@ p { color: #777777; }
 
 h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
-.home { background-color: rgba(0, 0, 0, 0.5); background-size: cover; background-position: center; height: 700px; }
+.home { background-size: cover; background-position: center; position: relative; height: 700px; }
+
+.home .layer { background-color: rgba(0, 0, 0, 0.5); position: absolute; height: 100%; width: 100%; }
 
 .home .header { display: flex; flex-direction: row; justify-content: space-around; padding-top: 25px; }
 
@@ -215,7 +217,9 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .home .hero-text button { background-color: #fed136; color: white; width: 240px; height: 65px; font-weight: 700; border: none; border-radius: 3px; }
 
-.services, .portfolio { display: flex; justify-content: center; text-align: center; padding: 120px 0; }
+.services, .portfolio, .team { display: flex; justify-content: center; text-align: center; padding: 120px 0; }
+
+.logos { display: flex; justify-content: space-evenly; text-align: center; padding: 60px 0; }
 
 .services .encapsuled-services { padding: 80px 0; }
 
@@ -231,10 +235,26 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .about h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
+.about .about-text-right { width: 80%; float: right; }
+
+.about .about-text-left { width: 80%; float: left; }
+
 .about .future { background-color: #fed136; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; padding: 30px; font-size: 18px; /* Przybliżenie (wynika z podstawienia czcionki) */ font-weight: 700; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
 
 .about .future p { color: #ffffff; margin: 10px 0 0 0; }
 
 .section-header { display: flex; flex-direction: column; align-items: center; padding-bottom: 85px; }
+
+.team .portrait { border: none; }
+
+.team h4, .team p { text-align: center; }
+
+.team .social { display: flex; justify-content: center; }
+
+.team .social i { margin: 0 10px; font-size: 21px; text-align: center; padding: 7px 0; border: 3px solid black; border-radius: 50%; width: 40px; height: 40px; }
+
+.team .team-end { width: 80%; margin: 50px auto 0; }
+
+.contact { background-size: cover; background-position: center; }
 
 .contact .section-header h1 { color: white; }
