@@ -10,7 +10,7 @@ body {
 .header-follow {
     font-family: 'PT Serif', serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 .text-block {
@@ -35,6 +35,9 @@ p {
     border-left: 2px solid $about-border;
     height: 90px;
     transform: translateX(50%);
+    @media (max-width: 1200px) {
+        display: none;
+    }
 }
 
 .portrait {
@@ -48,7 +51,7 @@ p {
 }
 h1 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
@@ -97,14 +100,14 @@ h1 {
         align-items: center;
         color: white;
         h2 {
-            font-size: 40px;
+            font-size: 2.3em;
             font-weight: 300;
             font-family: 'PT Serif', serif;
             font-style: italic;
             margin-top: 0;
         }
         h1 {
-            font-size: 75px;
+            font-size: 4.5em;
             margin-top: 0;
         }
         h1,
@@ -137,24 +140,44 @@ h1 {
 }
 
 .logos {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
     padding: 60px 0;
+    img {
+        transform: translate(45%);
+    }
 }
 
 .services {
     .encapsuled-services {
         padding: 80px 0;
+        @media (max-width:1200px) {
+            p,
+            h3 {
+                font-size: 1.8em;
+            }
+            p {
+                margin: 0 auto;
+                width: 50%;
+                margin-bottom: 80px;
+            }
+        }
     }
     .circle {
         margin: auto;
         border: 3px solid $golden;
-        border-radius: 50px;
+        border-radius: 50%;
         width: 80px;
         height: 80px;
+        @media (max-width: 1200px) {
+            width: 120px;
+            height: 120px;
+            border-width: 5px;
+        }
         img {
             padding: 18px 15px;
+            @media (max-width: 1200px) {
+                height: 100px;
+                padding: 20px 15px 15px 15px;
+            }
         }
     }
 }
@@ -175,7 +198,7 @@ h1 {
     padding: 120px 0;
     h1 {
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 2.5em;
         font-weight: 700;
     }
     h4 {
@@ -202,7 +225,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         padding: 30px;
-        font-size: 18px;/* Przybliżenie (wynika z podstawienia czcionki) */
+        font-size: 1.1em;
         font-weight: 700;
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
         p {
@@ -301,8 +324,9 @@ h1 {
 footer {
     i {
         margin: 0 10px;
-        font-size: 21px;
+        font-size: 1.3em;
         text-align: center;
+        color: black;
         padding: 10px 0;
         border: 2px solid black;
         border-radius: 50%;
@@ -334,7 +358,6 @@ footer {
     .fa-pinterest-p,
     .fa-google-plus-g {
         &:hover {
-            cursor: pointer;
             color: white;
         }
     }
