@@ -84,9 +84,8 @@ h1 {
             text-transform: uppercase;
             color: white;
             margin: 0 20px;
-            transition-duration: 0.5s;
             &:hover {
-                color: $golden;
+                cursor: pointer;
             }
         }
     }
@@ -120,6 +119,9 @@ h1 {
             font-weight: 700;
             border: none;
             border-radius: 3px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -162,6 +164,9 @@ h1 {
         margin: 50px 55px;
         p {
             padding-bottom: 27px;
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
 }
@@ -286,6 +291,9 @@ h1 {
             height: 60px;
             margin: 30px auto 110px;
             text-transform: uppercase;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -295,11 +303,11 @@ footer {
         margin: 0 10px;
         font-size: 21px;
         text-align: center;
-        padding: 7px 0;
+        padding: 10px 0;
         border: 2px solid black;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
     }
 }
 footer {
@@ -313,5 +321,37 @@ footer {
     p,
     .social {
         padding: 40px;
+        i {
+            color: white;
+            background-color: #222222;
+        }
+    }
+}
+
+.social {
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-pinterest-p,
+    .fa-google-plus-g {
+        &:hover {
+            cursor: pointer;
+            color: white;
+        }
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+        border-color: #00aced;
+    }
+    .fa-facebook-f:hover {
+        background-color: #3b5998;
+        border-color: #3b5998;
+    }
+    .fa-pinterest-p:hover {
+        background-color: #cb2028;
+        border-color: #cb2028;
+    }
+    .fa-google-plus-g:hover {
+        background-color: #d95232;
+        border-color: #d95232;
     }
 }

@@ -205,9 +205,9 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .home .header ul { display: flex; flex-direction: row; list-style-type: none; }
 
-.home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; margin: 0 20px; transition-duration: 0.5s; }
+.home .header li { padding: 5px; font-family: 'Montserrat', sans-serif; font-weight: 500; text-transform: uppercase; color: white; margin: 0 20px; }
 
-.home .header li:hover { color: #fed136; }
+.home .header li:hover { cursor: pointer; }
 
 .home .hero-text { height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; }
 
@@ -218,6 +218,8 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 .home .hero-text h1, .home .hero-text button { text-transform: uppercase; }
 
 .home .hero-text button { background-color: #fed136; color: white; width: 240px; height: 65px; font-weight: 700; border: none; border-radius: 3px; }
+
+.home .hero-text button:hover { cursor: pointer; }
 
 .services, .portfolio, .team { display: flex; justify-content: center; text-align: center; padding: 120px 0; }
 
@@ -232,6 +234,8 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 .portfolio .brick { margin: 50px 55px; }
 
 .portfolio .brick p { padding-bottom: 27px; }
+
+.portfolio .brick:hover { cursor: pointer; }
 
 .about { padding: 120px 0; }
 
@@ -283,7 +287,9 @@ h1 { text-transform: uppercase; font-size: 40px; font-weight: 700; }
 
 .contact form .submit { color: white; background-color: #fed136; border: none; border-radius: 5px; width: 240px; height: 60px; margin: 30px auto 110px; text-transform: uppercase; }
 
-.team i, footer i { margin: 0 10px; font-size: 21px; text-align: center; padding: 7px 0; border: 2px solid black; border-radius: 50%; width: 40px; height: 40px; }
+.contact form .submit:hover { cursor: pointer; }
+
+.team i, footer i { margin: 0 10px; font-size: 21px; text-align: center; padding: 10px 0; border: 2px solid black; border-radius: 50%; width: 45px; height: 45px; }
 
 footer { height: 80px; }
 
@@ -292,3 +298,15 @@ footer .row { height: 100%; }
 footer .center { text-align: center; }
 
 footer p, footer .social { padding: 40px; }
+
+footer p i, footer .social i { color: white; background-color: #222222; }
+
+.social .fa-twitter:hover, .social .fa-facebook-f:hover, .social .fa-pinterest-p:hover, .social .fa-google-plus-g:hover { cursor: pointer; color: white; }
+
+.social .fa-twitter:hover { background-color: #00aced; border-color: #00aced; }
+
+.social .fa-facebook-f:hover { background-color: #3b5998; border-color: #3b5998; }
+
+.social .fa-pinterest-p:hover { background-color: #cb2028; border-color: #cb2028; }
+
+.social .fa-google-plus-g:hover { background-color: #d95232; border-color: #d95232; }
