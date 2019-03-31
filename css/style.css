@@ -289,7 +289,7 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 @media (max-width: 1200px) { .services .circle img { height: 100px; padding: 20px 15px 15px 15px; } }
 
-.portfolio .brick { margin: 50px 55px; }
+.portfolio .brick { margin-bottom: 50px; width: fit-content; display: inline-block; }
 
 .portfolio .brick p { padding-bottom: 27px; }
 
@@ -301,11 +301,13 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 .about h4 { margin: 7px; }
 
+@media (max-width: 1200px) { .about h4, .about p { font-size: 1.3em; } }
+
 .about .about-text-right { width: 80%; float: right; }
 
 .about .about-text-left { width: 80%; float: left; }
 
-.about .portrait { height: 100%; }
+.about .portrait { height: 225px; width: 225px; }
 
 .about .future { background-color: #fed136; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; padding: 30px; font-size: 1.1em; font-weight: 700; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
 
@@ -333,13 +335,15 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 .contact form .text-fields { display: flex; justify-content: center; height: auto; width: 100%; }
 
-.contact form .text-fields .info { display: flex; flex-direction: column; }
+.contact form .text-fields .info { display: flex; flex-direction: column; align-items: flex-end; }
 
 .contact form .text-fields .info input { height: 50px; }
 
 .contact form .text-fields .msg textarea { height: 190px; }
 
-.contact form .text-fields input, .contact form .text-fields textarea { margin: 10px; padding: 15px; width: 500px; border: none; border-radius: 4px; }
+.contact form .text-fields .info, .contact form .text-fields .msg { width: 90%; }
+
+.contact form .text-fields input, .contact form .text-fields textarea { margin: 10px; padding: 15px; width: 90%; border: none; border-radius: 4px; }
 
 .contact form .text-fields input::placeholder, .contact form .text-fields textarea::placeholder { color: #bbbbbb; font-weight: 700; }
 
@@ -354,6 +358,8 @@ footer { height: 80px; }
 footer .row { height: 100%; }
 
 footer .center { text-align: center; }
+
+@media (max-width: 768px) { footer p { background-color: #f7f7f7; } }
 
 footer p, footer .social { padding: 40px; }
 

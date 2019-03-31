@@ -184,7 +184,9 @@ h1 {
 
 .portfolio {
     .brick {
-        margin: 50px 55px;
+        margin-bottom: 50px;
+        width: fit-content;       
+        display: inline-block;
         p {
             padding-bottom: 27px;
         }
@@ -204,6 +206,12 @@ h1 {
     h4 {
         margin: 7px;
     }
+    h4,
+    p {
+        @media(max-width: 1200px) {
+            font-size: 1.3em;
+        }
+    }
 
     .about-text-right {
         width: 80%;
@@ -215,7 +223,8 @@ h1 {
         float: left;
     }
     .portrait {
-        height: 100%;
+        height: 225px;
+        width: 225px;
     }
     
     .future {
@@ -283,6 +292,7 @@ h1 {
             .info {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-end;
                 input {
                     height: 50px;
                 }
@@ -292,13 +302,18 @@ h1 {
                     height: 190px;
                 }
             }
+            .info,
+            .msg {
+                width: 90%;
+            }
             input,
             textarea {                
                 margin: 10px;
                 padding: 15px;
-                width: 500px;
+                width: 90%;
                 border: none;
                 border-radius: 4px;
+                
                 &::placeholder {
                     color: #bbbbbb;
                     font-weight: 700;
@@ -341,6 +356,11 @@ footer {
     }
     .center {
         text-align: center;
+    }
+    p {
+        @media(max-width:768px) {
+            background-color: #f7f7f7;
+        }
     }
     p,
     .social {
