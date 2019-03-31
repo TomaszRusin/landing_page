@@ -19,6 +19,15 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+@media(max-width: 992px) and (min-width: 769px) {
+	.row-rew {
+		display: flex;
+		position: relative;
+		top: -480px;
+		flex-wrap: wrap-reverse;
+		flex-direction: row-reverse;
+	}
+}
 
 .bg-gray {
 	background-color: #f7f7f7;

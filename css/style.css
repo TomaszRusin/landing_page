@@ -220,6 +220,8 @@ template { display: none; }
 
 .row { display: flex; flex-wrap: wrap; }
 
+@media (max-width: 992px) and (min-width: 769px) { .row-rew { display: flex; position: relative; top: -480px; flex-wrap: wrap-reverse; flex-direction: row-reverse; } }
+
 .bg-gray { background-color: #f7f7f7; }
 
 .bg-white { background-color: #fff; }
@@ -241,6 +243,8 @@ p { color: #777777; }
 @media (max-width: 1200px) { .vertical-line { display: none; } }
 
 .portrait { margin: auto; border: 7px solid #f1f1f1; border-radius: 50%; width: 200px; height: 200px; background-size: cover; background-position: center; }
+
+@media (max-width: 1200px) { .portrait { height: 225px; width: 225px; } }
 
 h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
@@ -274,7 +278,9 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 .logos { padding: 60px 0; }
 
-.logos img { transform: translate(45%); }
+.logos .brand { display: flex; justify-content: center; }
+
+@media (max-width: 992px) { .logos .brand { padding: 40px 0; } }
 
 .services .encapsuled-services { padding: 80px 0; }
 
@@ -289,11 +295,15 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 @media (max-width: 1200px) { .services .circle img { height: 100px; padding: 20px 15px 15px 15px; } }
 
+.portfolio p { padding-bottom: 50px; }
+
 .portfolio .brick { margin-bottom: 50px; width: fit-content; display: inline-block; }
 
 .portfolio .brick p { padding-bottom: 27px; }
 
 .portfolio .brick:hover { cursor: pointer; }
+
+@media (max-width: 992px) and (min-width: 769px) { .portfolio { height: 1800px; } }
 
 .about { padding: 120px 0; }
 
@@ -306,8 +316,6 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 .about .about-text-right { width: 80%; float: right; }
 
 .about .about-text-left { width: 80%; float: left; }
-
-.about .portrait { height: 225px; width: 225px; }
 
 .about .future { background-color: #fed136; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; padding: 30px; font-size: 1.1em; font-weight: 700; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
 
@@ -322,6 +330,11 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 .team .social { display: flex; justify-content: center; }
 
 .team .team-end { width: 80%; margin: 50px auto 0; }
+
+@media (max-width: 992px) { .team .portrait { height: 400px; width: 400px; }
+  .team .social { padding-bottom: 40px; }
+  .team .social i { border-width: 5px; height: 100px; width: 100px; font-size: 3em; padding-top: 20px; margin: 20px; }
+  .team h4, .team p { font-size: 1.5em; } }
 
 .contact { background-color: #222222; }
 
@@ -341,17 +354,21 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 .contact form .text-fields .msg textarea { height: 190px; }
 
+@media (max-width: 768px) { .contact form .text-fields .msg { display: flex; justify-content: flex-end; } }
+
 .contact form .text-fields .info, .contact form .text-fields .msg { width: 90%; }
 
 .contact form .text-fields input, .contact form .text-fields textarea { margin: 10px; padding: 15px; width: 90%; border: none; border-radius: 4px; }
 
 .contact form .text-fields input::placeholder, .contact form .text-fields textarea::placeholder { color: #bbbbbb; font-weight: 700; }
 
+@media (max-width: 768px) { .contact form .text-fields { flex-direction: column; } }
+
 .contact form .submit { color: white; background-color: #fed136; border: none; border-radius: 5px; width: 240px; height: 60px; margin: 30px auto 110px; text-transform: uppercase; }
 
 .contact form .submit:hover { cursor: pointer; }
 
-.team i, footer i { margin: 0 10px; font-size: 1.3em; text-align: center; color: black; padding: 10px 0; border: 2px solid black; border-radius: 50%; width: 45px; height: 45px; }
+.team i, footer i { margin: 0 10px; font-size: 1.3em; text-align: center; color: black; padding-top: 10px; border: 2px solid black; border-radius: 50%; width: 45px; height: 45px; }
 
 footer { height: 80px; }
 
