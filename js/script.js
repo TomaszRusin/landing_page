@@ -1,9 +1,13 @@
 
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+
+  const burger = document.getElementById('burger');
+
+  const myLinks = document.getElementById('myLinks');
+
+  burger.addEventListener('click', function(){
+    if (myLinks.classList.length === 1) {
+      myLinks.classList.add('visible');
     } else {
-      x.style.display = "block";
+      myLinks.classList.remove('visible');
     }
-  }
+  })

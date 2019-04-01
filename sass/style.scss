@@ -53,8 +53,8 @@ p {
         width: 225px;
     }
     @media (max-width: 992px) {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -80,7 +80,7 @@ h1 {
         flex-direction: row;
         justify-content: space-around;
         padding-top: 25px;
-        #myLinks {
+        .links {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -105,11 +105,15 @@ h1 {
             overflow: hidden;
             background-color: #333;
             position: relative;
-            #myLinks {
+            .links {
                 display: none;
                 a {
                     padding: 25px 0;
                 }
+            }
+            .visible {
+                display: flex;
+                flex-direction: column;
             }
             a {
                 height: fit-content;
@@ -172,6 +176,15 @@ h1 {
                 cursor: pointer;
             }
         }
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 2.5em;
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -190,6 +203,7 @@ h1 {
     .brand {
         display: flex;
         justify-content: center;
+        align-items: center;
         @media(max-width:992px){
             padding: 40px 0;
         }
@@ -198,7 +212,7 @@ h1 {
 
 .services {
     .encapsuled-services {
-        padding: 80px 0;
+        padding-top: 80px;
         @media (max-width:1200px) {
             p,
             h3 {
@@ -206,8 +220,14 @@ h1 {
             }
             p {
                 margin: 0 auto;
-                width: 50%;
+                width: 80%;
                 margin-bottom: 80px;
+            }
+        }
+        @media (max-width:768px) {
+            p,
+            h3 {
+                font-size: 1.3em;
             }
         }
     }
@@ -241,8 +261,9 @@ h1 {
         width: fit-content;       
         display: inline-block;
         @media (max-width: 768px) {
+            width: 100%;
             img {
-                height: 500px;
+                width: 100%;
             }
             h4,
             p {
@@ -303,7 +324,7 @@ h1 {
             margin: 10px 0 0 0;
         }
         @media (max-width: 992px) {
-            padding: 90px;
+            padding: 50px;
             font-size: 1.5em;
         }
     }
@@ -346,17 +367,12 @@ h1 {
     .social {
         display: flex;
         justify-content: center;
-
     }
     .team-end {
         width: 80%;
         margin: 50px auto 0;
     }
     @media(max-width: 992px) {
-        .portrait {
-            height: 400px;
-            width: 400px;
-        }
         .social {
             padding-bottom: 40px;
         }
@@ -447,9 +463,9 @@ footer {
         margin: 0 10px;
         font-size: 1.3em;
         text-align: center;
-        color: black;
+        color: #222222;;
         padding-top: 10px;
-        border: 2px solid black;
+        border: 2px solid #222222;;
         border-radius: 50%;
         width: 45px;
         height: 45px;
@@ -460,6 +476,14 @@ footer {
             font-size: 3em;
             padding-top: 20px;
             margin: 20px;
+        }
+        @media(max-width: 768px) {
+            border-width: 3px;
+            height: 75px;
+            width: 75px;
+            font-size: 2.5em;
+            padding-top: 15px;
+            margin: 15px;
         }
     }
 }
