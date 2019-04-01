@@ -52,7 +52,12 @@ p {
         height: 225px;
         width: 225px;
     }
+    @media (max-width: 992px) {
+        height: 400px;
+        width: 400px;
+    }
 }
+
 h1 {
     text-transform: uppercase;
     font-size: 2.5em;
@@ -69,30 +74,63 @@ h1 {
         position: absolute;
         height: 100%;
         width: 100%;
-
     }
-    .header {
+    .topnav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding-top: 25px;
+        #myLinks {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            a {
+                color: white;
+                padding: 5px;
+                margin: 0 20px;
+                text-decoration: none;
+                font-size: 1.4em;
+            }
+        }
         .logo {
             margin: 16px;
         }
-        ul {
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
+        .icon {
+            display: none;
         }
-        li {
-            padding: 5px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            text-transform: uppercase;
+        @media(max-width: 992px) {
+            .icon {
+                display: block;
+            }
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+            #myLinks {
+                display: none;
+                a {
+                    padding: 25px 0;
+                }
+            }
+            a {
+                height: fit-content;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+                &:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+            }
+            .icon {
+                padding: 14px 16px;
+            }
+            i {
+                font-size: 1.5em;
+                }             
+            .active {
+            background-color: #4CAF50;
             color: white;
-            margin: 0 20px;
-            &:hover {
-                cursor: pointer;
             }
         }
     }
@@ -113,6 +151,10 @@ h1 {
         h1 {
             font-size: 4.5em;
             margin-top: 0;
+            @media (max-width: 992px) {
+                width: 70%;
+                text-align: center;
+            }
         }
         h1,
         button{
@@ -152,9 +194,6 @@ h1 {
             padding: 40px 0;
         }
     }
-    // img {
-    //     transform: translate(45%);
-    // }
 }
 
 .services {
@@ -201,6 +240,15 @@ h1 {
         margin-bottom: 50px;
         width: fit-content;       
         display: inline-block;
+        @media (max-width: 768px) {
+            img {
+                height: 500px;
+            }
+            h4,
+            p {
+                font-size: 1.5em;
+            }
+        }
         p {
             padding-bottom: 27px;
         }
@@ -254,6 +302,30 @@ h1 {
             color:  #ffffff;
             margin: 10px 0 0 0;
         }
+        @media (max-width: 992px) {
+            padding: 90px;
+            font-size: 1.5em;
+        }
+    }
+    @media(max-width: 992px) {
+        .rew {
+            display: flex;
+            flex-direction: column-reverse
+        }
+        h4,
+        p {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .about-text-right,
+        .about-text-left {
+            float: none;
+            margin: 0 auto;
+        }
+        .text-left,
+        .text-right {
+            padding: 20px 0;
+        }
     }
 }
 .section-header {
@@ -287,14 +359,6 @@ h1 {
         }
         .social {
             padding-bottom: 40px;
-            i {
-                border-width: 5px;
-                height: 100px;
-                width: 100px;
-                font-size: 3em;
-                padding-top: 20px;
-                margin: 20px;
-            }
         }
         h4,
         p {
