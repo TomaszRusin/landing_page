@@ -370,6 +370,8 @@ h1 { text-transform: uppercase; font-size: 2.5em; font-weight: 700; }
 
 .team i, footer i { margin: 0 10px; font-size: 1.3em; text-align: center; color: black; padding-top: 10px; border: 2px solid black; border-radius: 50%; width: 45px; height: 45px; }
 
+@media (max-width: 992px) { .team i, footer i { border-width: 5px; height: 100px; width: 100px; font-size: 3em; padding-top: 20px; margin: 20px; } }
+
 footer { height: 80px; }
 
 footer .row { height: 100%; }
