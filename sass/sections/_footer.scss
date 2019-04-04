@@ -1,0 +1,23 @@
+
+footer {
+    height: 80px;
+    .row {
+        height: 100%;
+    }
+    .center {
+        text-align: center;
+    }
+    p {
+        @media(max-width:768px) {
+            background-color: #f7f7f7;
+        }
+    }
+    p,
+    .social {
+        padding: 40px;
+        i {
+            color: white;
+            background-color: #222222;
+        }
+    }
+}

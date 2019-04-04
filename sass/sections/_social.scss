@@ -1,0 +1,28 @@
+
+
+.social {
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-pinterest-p,
+    .fa-google-plus-g {
+        &:hover {
+            color: white;
+        }
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+        border-color: #00aced;
+    }
+    .fa-facebook-f:hover {
+        background-color: #3b5998;
+        border-color: #3b5998;
+    }
+    .fa-pinterest-p:hover {
+        background-color: #cb2028;
+        border-color: #cb2028;
+    }
+    .fa-google-plus-g:hover {
+        background-color: #d95232;
+        border-color: #d95232;
+    }
+}

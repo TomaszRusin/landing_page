@@ -1,0 +1,30 @@
+.team {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 0;
+    .portrait {
+        border: none;
+    }
+    h4,
+    p {
+        text-align: center;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    .team-end {
+        width: 80%;
+        margin: 50px auto 0;
+    }
+    @media(max-width: 992px) {
+        .social {
+            padding-bottom: 40px;
+        }
+        h4,
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
