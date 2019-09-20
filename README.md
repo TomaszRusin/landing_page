@@ -1,7 +1,7 @@
 
 Landing page by the theme "Golden". Made to practice coding from psd to html/css/js
 
-Github pages link: https://tomaszrusin.github.io/landing_page/
+Github pages link: https://tomaszrusin.github.io/Golden-landing/
 
 # Availabile scripts
 
