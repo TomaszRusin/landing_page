@@ -5,11 +5,11 @@ Github pages link: https://tomaszrusin.github.io/Golden-landing/
 
 # Availabile scripts
 
-## To test for errors in code
-```npm run test```
+## ```npm run test```
+To test for errors in code
 
-## To start project in watch mode 
-```npm run watch```
+## ```npm run watch```
+To start project in watch mode 
 
-## To run all preprocessors and compile files 
-```npm run build```
+## ```npm run build```
+To run all preprocessors and compile files 
