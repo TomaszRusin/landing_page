@@ -3,13 +3,13 @@ Landing page by the theme "Golden". Made to practice coding from psd to html/css
 
 Github pages link: https://tomaszrusin.github.io/landing_page/
 
-#Availabile scripts
+# Availabile scripts
 
-##To test for errors in code
+## To test for errors in code
 ```npm run test```
 
-##To start project in watch mode 
+## To start project in watch mode 
 ```npm run watch```
 
-##To run all preprocessors and compile files 
+## To run all preprocessors and compile files 
 ```npm run build```
